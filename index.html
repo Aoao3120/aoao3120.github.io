@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="シンプルこづかい帳の開発者サイトです。">
+  <title>シンプルこづかい帳 - 開発者サイト</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #23312b;
+      --muted: #5c6b63;
+      --line: #d7dfda;
+      --accent: #3f6b55;
+      --paper: #f7f8f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+
+    main {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 56px;
+    }
+
+    header {
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 34rem;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    section {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.15rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+    }
+
+    footer {
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Android app</p>
+      <h1>シンプルこづかい帳</h1>
+      <p class="lead">数字を入力してカテゴリを選ぶだけ。日々の支出を手軽に記録できる、シンプルな家計簿アプリです。</p>
+    </header>
+
+    <section>
+      <h2>アプリについて</h2>
+      <p>記録した家計データは端末内に保存され、開発者のサーバーへ送信されません。無料版ではバナー広告を表示し、プレミアムでは広告を非表示にできます。</p>
+    </section>
+
+    <section>
+      <h2>サポート</h2>
+      <p>お問い合わせ: <a href="mailto:dashlab.dev@gmail.com">dashlab.dev@gmail.com</a></p>
+      <p>プライバシーポリシー: <a href="https://aoao3120.github.io/kozukaichou-policy/">https://aoao3120.github.io/kozukaichou-policy/</a></p>
+    </section>
+
+    <footer>
+      <p>Google Play 版は公開準備中です。</p>
+    </footer>
+  </main>
+</body>
+</html>
